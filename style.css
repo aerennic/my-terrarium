@@ -1,3 +1,50 @@
 h1 {
-  color: blue;
+  color: #3a241d;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 10; 
+  padding: 10; 
+}
+
+/* Class selectors use the . symbol */ 
+.container {
+  background-color: #f5f5f5;
+  width: 15%;
+  top: 0;
+  position: absolute;
+  height: 100vh;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* ID selectors use the # symbol */
+#left-container {
+  left: 0;
+}
+
+#right-container {
+  right: 0;
+}
+
+.plant-holder {
+  position: relative;
+  height: 13%;
+  left: -0.6rem;
+}
+
+.plant {
+  position: absolute; 
+  max-width: 150%;
+  max-height: 150%;
+  z-index: 2; 
+  transition: transform 0.3s ease;
+}
+
+.plant:hover {
+  transform: scale(1.05);
 }
